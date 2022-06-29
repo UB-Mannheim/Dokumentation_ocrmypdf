@@ -6,20 +6,24 @@ Im Folgenden wird die Installation und Nutzung von OCRmyPDF unter Ubuntu 20.04 i
 
 ## 1. Installation:  
 
-### 1.1 Zunächst empfiehlt es sich immer Ubuntu auf den neusten Stand zu bringen:  
+### 1.1 Ubuntu upgraden
+Zunächst empfiehlt es sich immer Ubuntu auf den neusten Stand zu bringen:  
 ```
 $ sudo apt update
 $ sudo apt upgrade
 ```
-### 1.2 Zur Nutzung von OCRmyPDF werden folgende Programme benötigt: Imagemagick, parallel, ghostscript qpdf, unpaper und tesseract-ocr. Mit folgendem Befehl können diese installiert werden:  
+### 1.2 Herunterladen von zusätzlichen Programmen  
+Zur Nutzung von OCRmyPDF werden folgende Programme benötigt: Imagemagick, parallel, ghostscript qpdf, unpaper und tesseract-ocr. Mit folgendem Befehl können diese installiert werden:  
 ```
 $ sudo apt-get install imagemagick parallel ghostscript qpdf unpaper tesseract-ocr
 ```
-### 1.3 Um mit einer aktuellen Version von OCRmyPDF arbeiten zu können, sollten Sie diese ebenfalls herunterladen:  
+### 1.3 Download von OCRmyPDF  
+Um mit einer aktuellen Version von OCRmyPDF arbeiten zu können, sollten Sie diese ebenfalls herunterladen:  
 ```
 $ sudo apt-get install ocrmypdf
 ```
-### 1.4 Zudem sollte der JBIG-Encoder installiert werden, da sonst die ausgegeben PDF-Dateien sehr groß werden. Dafür geben Sie folgende Befehle in die Kommandozeile ein:  
+### 1.4 Installation des JBIG-Encoders
+Zudem sollte der JBIG-Encoder installiert werden, da sonst die ausgegeben PDF-Dateien sehr groß werden. Dafür geben Sie folgende Befehle in die Kommandozeile ein:  
 ```
 $ git clone https://github.com/agl/jbig2enc
 $ cd jbig2enc
